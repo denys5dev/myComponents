@@ -1,0 +1,45 @@
+.header {
+    height: 40px;
+    width: 100%;
+    background-color: #7ABD27;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    display: block;
+    margin: 10px;
+    &_header {
+        color: white;
+        margin: 0;
+    }
+}
+
+.menu {
+    float: right;
+    display: block;
+    &_list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &-item {
+            float: left;
+            display: block;
+            height: 40px;
+            &:hover {
+                cursor: pointer;
+                background-color: #45730B;
+            }
+        }
+        &-link {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+            line-height: 38px;
+        }
+    }
+}
+
+main {
+    margin: 10px;
+}
