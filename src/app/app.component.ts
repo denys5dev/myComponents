@@ -24,6 +24,6 @@ export class AppComponent {
   }
 
   onValueChanged(event: any) {
-    console.log(event)
+        
   }
 }

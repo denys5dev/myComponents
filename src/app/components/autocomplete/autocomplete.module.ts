@@ -8,4 +8,6 @@ import { AutocompleteComponent } from './autocomplete.component';
     providers: [],
     exports: []
 })
-export class AutocompleteModule { }
+export class AutocompleteModule {
+
+}

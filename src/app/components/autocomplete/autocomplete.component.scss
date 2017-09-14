@@ -1,0 +1,33 @@
+.autocomplete-wrapper {
+    width: 162px;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.den-autocomplete {
+    width: 100%;
+}
+
+.den-doropdown {
+    background-color: #f1f1f1;
+    padding: 1px;
+    border: 1px solid #b3b3b3;
+    max-height: 68px;
+    overflow: auto;
+    &_options {
+        margin: 0;
+        padding: 3px;
+        cursor: pointer;
+        list-style: none;
+        &:hover {
+            background-color: #70707C;
+            color: white;
+        }
+    }
+}
+
+.active {
+    background-color: #70707C;
+    color: white;
+}
