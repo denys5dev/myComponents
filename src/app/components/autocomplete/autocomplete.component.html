@@ -1,9 +1,11 @@
-<div class="autocomplete-wrapper">
-    <input type="text" class="den-autocomplete" #autocomplete (keyup)="onKey($event)" (keydown)="keyDown($event)" (keyup.enter)="onEneterSelectOption(arrowkeyLocation)" [value]="value">
-    <div class="den-autocomplete den-doropdown" #doropdown *ngIf="result.length > 0">
-        <li class="den-doropdown_options" *ngFor="let r of result; let i = index" [class.active]="i == arrowkeyLocation" (click)="selectOption(r)">
-            <span>{{r.value}}</span>
-        </li>
+<div class="autocomplete__container cf">
+    <div class="autocomplete-wrapper">
+        <input type="text" class="den-autocomplete" #autocomplete (keyup)="onKey($event)" (keydown)="keyDown($event)" (keyup.enter)="onEneterSelectOption(arrowkeyLocation)" [value]="value">
+        <div class="den-autocomplete den-doropdown" #doropdown *ngIf="result.length > 0">
+            <li class="den-doropdown_options" *ngFor="let r of result; let i = index" [class.active]="i == arrowkeyLocation" (click)="selectOption(r)">
+                <span>{{r.value}}</span>
+            </li>
+        </div>
     </div>
 </div>
 

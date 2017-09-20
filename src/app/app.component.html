@@ -1,23 +1,26 @@
-<header class="header cf">
-  <div class="logo">
-    <h4 class="logo_header">My Components</h4>
-  </div>
-  <div class="menu">
-    <ul class="menu_list cf">
-      <li class="menu_list-item">
-        <a class="menu_list-link" href="">Documentation</a>
-      </li>
-      <li class="menu_list-item">
-        <a class="menu_list-link"href="">About</a>
-      </li>
-      <li class="menu_list-item">
-        <a class="menu_list-link" href="">Contacts</a>
-      </li>
-    </ul>
-  </div>
-</header>
-
-<main>
+<div class="wrapper">
+  <header class="header cf">
+    <div class="logo">
+      <h4 class="logo_header">My Components</h4>
+    </div>
+    <div class="menu">
+      <ul class="menu_list cf">
+        <li class="menu_list-item">
+          <a class="menu_list-link"  href="">Documentation</a>
+        </li>
+        <li class="menu_list-item">
+          <a class="menu_list-link" href="">About</a>
+        </li>
+        <li class="menu_list-item">
+          <a class="menu_list-link" href="">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <p>lorem1550</p>
     <den-autocomplete (onValueChanged)="onValueChanged($event)" [data]="items"></den-autocomplete>
-</main>
+  </main>
+</div>
 
+<footer></footer>

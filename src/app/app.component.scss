@@ -1,5 +1,5 @@
 .header {
-    height: 40px;
+    height: 56px;
     width: 100%;
     background-color: #7ABD27;
     overflow: hidden;
@@ -8,38 +8,72 @@
 .logo {
     float: left;
     display: block;
-    margin: 10px;
+    height: 100%;
+    &:after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
     &_header {
         color: white;
-        margin: 0;
+        padding:  0px 0px 4px 10px;
+        vertical-align: middle;
+        display: inline-block;
     }
 }
 
 .menu {
     float: right;
     display: block;
+    height: 56px;
     &_list {
         list-style: none;
         padding: 0;
         margin: 0;
+        height: 100%;
         &-item {
             float: left;
             display: block;
-            height: 40px;
+            height: 100%;
+            &:after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                height: 100%;
+            }
             &:hover {
                 cursor: pointer;
                 background-color: #45730B;
+                transition: ease-in-out .2s;
             }
         }
         &-link {
             text-decoration: none;
             color: white;
-            margin: 10px;
-            line-height: 38px;
+            vertical-align: middle;
+            display: inline-block;
+            margin: 0px 10px;
         }
     }
 }
 
 main {
     margin: 10px;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -56px;
+}
+
+.wrapper:after {
+    content: '';
+    display: block;
+    height: 56px;
+}
+
+footer {
+    background-color: rgba(10, 3, 7, 0.56);
+    height: 56px;
 }
